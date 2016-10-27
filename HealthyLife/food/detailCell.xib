@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="qq" selectionStyle="default" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="detailCell" customModule="HealthyLife" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PQO-TW-B3R">
+                        <rect key="frame" x="10" y="10" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="PQO-TW-B3R" secondAttribute="height" id="Hgj-CS-Rse"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pyc-qq-QLV">
+                        <rect key="frame" x="90" y="55" width="180" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmD-Bc-XTT">
+                        <rect key="frame" x="90" y="10" width="180" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="xmD-Bc-XTT" secondAttribute="trailing" constant="50" id="1Eu-wm-1CR"/>
+                    <constraint firstItem="xmD-Bc-XTT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="7mw-jq-cMM"/>
+                    <constraint firstAttribute="height" secondItem="PQO-TW-B3R" secondAttribute="height" id="Ltj-n7-BxK"/>
+                    <constraint firstItem="xmD-Bc-XTT" firstAttribute="leading" secondItem="PQO-TW-B3R" secondAttribute="trailing" constant="10" id="NjM-xQ-RYD"/>
+                    <constraint firstItem="PQO-TW-B3R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ajq-cC-93S"/>
+                    <constraint firstItem="xmD-Bc-XTT" firstAttribute="height" secondItem="PQO-TW-B3R" secondAttribute="height" multiplier="1/2" id="e61-v0-2De"/>
+                    <constraint firstItem="Pyc-qq-QLV" firstAttribute="leading" secondItem="PQO-TW-B3R" secondAttribute="trailing" constant="10" id="gQw-at-IYy"/>
+                    <constraint firstItem="Pyc-qq-QLV" firstAttribute="top" secondItem="xmD-Bc-XTT" secondAttribute="bottom" constant="10" id="jzr-Ae-zku"/>
+                    <constraint firstItem="PQO-TW-B3R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="pb3-jY-2Qn"/>
+                    <constraint firstItem="Pyc-qq-QLV" firstAttribute="bottom" secondItem="PQO-TW-B3R" secondAttribute="bottom" id="uiD-RF-zZG"/>
+                    <constraint firstAttribute="bottom" secondItem="PQO-TW-B3R" secondAttribute="bottom" constant="10" id="vQF-Ga-FZf"/>
+                    <constraint firstAttribute="trailing" secondItem="Pyc-qq-QLV" secondAttribute="trailing" constant="50" id="xlF-Yf-zHj"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Ltj-n7-BxK"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailL" destination="Pyc-qq-QLV" id="q4k-2L-3K6"/>
+                <outlet property="iconView" destination="PQO-TW-B3R" id="80W-ri-Lpo"/>
+                <outlet property="nameL" destination="xmD-Bc-XTT" id="Un5-Fs-Rl2"/>
+            </connections>
+            <point key="canvasLocation" x="239" y="257.5"/>
+        </tableViewCell>
+    </objects>
+</document>

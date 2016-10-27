@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<string>上传</string>
+	</array>
+	<array>
+		<string>控血糖模式</string>
+	</array>
+	<array>
+		<string>点餐</string>
+		<string>给我们一个建议</string>
+		<string>分享给朋友</string>
+	</array>
+</array>
+</plist>
